@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="recipe-container">
+      <a href="index.html" class="back-link">← {{backLink}}</a>
+      <h1 class="recipe-title">{{title}}</h1>
+
+      <div class="recipe-content">
+        <div class="recipe-intro">{{introduction}}</div>
+
+        <div class="recipe-details">
+          <div class="serving">{{servingFor}} {{servings}} {{servingPersons}}</div>
+
+          {{ingredients}}
+
+          <div class="cooking-time">
+            <h3>{{cookingTimeTitle}}</h3>
+            <p>{{cookingTime}}</p>
+          </div>
+        </div>
+
+        <div class="recipe-instructions">
+          {{steps}}
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
